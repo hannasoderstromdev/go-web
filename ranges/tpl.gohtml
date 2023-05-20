@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UFT-8">
+  <title>Ranges</title>
+</head>
+<body>
+  <h1>Ranges!</h1>
+  <ul>
+  {{ range .}}
+    <li>{{ . }}</li>
+  {{ end }}
+  </ul>
+
+    <ul>
+    {{ range $i, $el := . }}
+      <li>Index: {{ $i }}, Element: {{ $el }} </li>
+    {{ end }}
+    </ul>
+</body>
+</html>
